@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LiveIntent Tag Converter</title>
+    <style>
+    body {
+        font:18px 'open sans', sans-serif;
+        color: #34495e;
+        background:#ecf0f1;
+        padding: 2%
+    }
+
+    a {
+        color:#c0392b;
+    }
+    
+    input, textarea {
+        border: 1px solid #ddd;
+        padding:1%;
+    }
+   small {
+    display: block;
+    font-size: 55%;
+    margin-top: 10px;
+}
+
+ #top div {
+    width: 45%;
+    float: left;
+    margin-right:5%
+}
+
+p {font-size: 14px;}
+
+    #top div #starter {
+        width: 100%;
+        float:none;
+    }
+    
+    #bottom {
+        clear: both;
+        padding-top: 5%;
+    }
+    
+    textarea {
+        width: 95%;
+        height: 130px;
+    }
+    #top textarea {
+      width: 100%;
+    }
+
+    </style>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="container">preload content</div>
+    <script type="text/babel">
+      class LiveIntentText extends React.Component {
+        constructor(props) {
+          super(props);
+          this.handleChange = this.handleChange.bind(this);
+        }
+
+        handleChange(event) {
+          this.props.onChange(event.target.value);
+        }
+
+        render() {
+          return <textarea placeholder={this.props.placeholder} value={this.props.value} onChange={this.handleChange} />;
+        }
+      }
+
+      class LiveIntentTemplateMerger extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = { sourceValues: [], templateValues: [], template: '', output: '' };
+
+          this.handleSourceChange = this.handleSourceChange.bind(this);
+          this.handleTemplateChange = this.handleTemplateChange.bind(this);
+        }
+
+        extractValues(text) {
+          var values = [];
+          const re = /s=(\d+)/g;
+          var match;
+          while (match = re.exec(text)) {
+            values.push(match[1]);
+          }
+          return values;
+        }
+
+        handleSourceChange(value) {
+          const newSourceValues = this.extractValues(value);
+          this.setState({ 
+            sourceValues: newSourceValues, 
+            output: this.generateOutput(newSourceValues, this.state.templateValues, this.state.template) 
+          });
+        }
+
+        handleTemplateChange(value) {
+          const newTemplateValues = this.extractValues(value);
+          this.setState({ 
+            templateValues: newTemplateValues, 
+            template: value, 
+            output: this.generateOutput(this.state.sourceValues, newTemplateValues, value) 
+          });
+        }
+
+        generateOutput( sourceValues, templateValues, template) {
+          if ( sourceValues.length === 0 || sourceValues.length !== templateValues.length ) {
+            return '';
+          }
+          function replaceTemplateValueWithSource( output, templateValue, index ) {
+            return output.replace(`s=${templateValue}`, `s=${sourceValues[index]}`);
+          }
+          return templateValues.reduce(replaceTemplateValueWithSource, template);
+        }
+
+        render() {
+          return (
+            <div>
+              <div id="top">
+              <div>
+              <h2>LiveIntent Exported Markup: <small><a href="https://lfm.liveintent.com" target="_blank">Get it from LI</a></small></h2>
+              <LiveIntentText placeholder="Paste new LiveIntent markup here. The entire contents of the csv are fine." onChange={this.handleSourceChange} />
+              <p>Found {this.state.sourceValues.length} source values: {this.state.sourceValues.join(', ')}</p>
+              </div>
+              <div>
+              <h2>What is your desired output? <small><a href="sample.txt" target="_blank">Here is a sample</a></small></h2>
+              <LiveIntentText placeholder="Paste your ideal markup here." onChange={this.handleTemplateChange} />
+              <p>Found {this.state.templateValues.length} template values: {this.state.templateValues.join(', ')}</p>
+               </div>
+               </div>
+              <div id="bottom">
+              <h2>Your newly cleaned markup:</h2>
+              <textarea placeholder="Your paste-ready markup will appear here when the number of values match" value={this.state.output} />
+              </div>
+            </div>
+          );
+        }
+      }
+
+
+      ReactDOM.render(
+          <LiveIntentTemplateMerger />,
+          document.getElementById('container')
+      );
+    </script>
+  </body>
+</html>
