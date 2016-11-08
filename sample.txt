@@ -5,11 +5,11 @@
 	</div>
 	<img src="http://li.gopostmatic.com/imp?s=210229&sz=1x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" height="1" width="10" />
 	<img src="http://li.gopostmatic.com/imp?s=210230&sz=1x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" height="1" width="10" />
-	<div class="align_left">
+	<div class="alignleft">
 		<a href="http://li.gopostmatic.com/click?s=210225&sz=116x15&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" rel="nofollow"><img src="http://li.gopostmatic.com/imp?s=210225&sz=116x15&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" border="0" />
 		</a>
 	</div>
-	<div class="align_right">
+	<div class="alignright">
 		<a href="http://li.gopostmatic.com/click?s=210226&sz=69x15&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" rel="nofollow"><img src="http://li.gopostmatic.com/imp?s=210226&sz=69x15&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" border="0" />
 		</a>
 	</div>

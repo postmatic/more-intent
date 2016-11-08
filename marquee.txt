@@ -1,0 +1,63 @@
+<div class="postmatic_ad pm_ad_1 marquee">
+	<div class="primary_ad">
+            <a href="http://li.gopostmatic.com/click?s=213104&layout=marquee&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" rel="nofollow"><img src="http://li.gopostmatic.com/imp?s=213104&layout=marquee&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" border="0" style="display: block; width:100%; height:auto;" width="720" />
+            </a>
+    </div>
+
+        <img src="http://li.gopostmatic.com/imp?s=213105&sz=1x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" height="1" width="10" />
+
+
+        <img src="http://li.gopostmatic.com/imp?s=213106&sz=1x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" height="1" width="10" />
+
+    
+    	<div class="alignleft">
+            <a href="http://li.gopostmatic.com/click?s=213107&sz=116x15&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" rel="nofollow"><img src="http://li.gopostmatic.com/imp?s=213107&sz=116x15&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" border="0" />
+            </a>
+                </div>
+        <div class="alignright">
+            <a href="http://li.gopostmatic.com/click?s=213108&sz=69x15&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" rel="nofollow"><img src="http://li.gopostmatic.com/imp?s=213108&sz=69x15&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" border="0" />
+            </a>
+                </div>
+    
+	<div class="secondary_ads">
+            <img src="http://li.gopostmatic.com/imp?s=124606600&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606601&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606602&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606603&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606604&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606605&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606606&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606607&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606608&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606609&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606610&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606611&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606612&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606613&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606614&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606615&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606616&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606617&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606618&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+            <img src="http://li.gopostmatic.com/imp?s=124606619&sz=2x1&li={{site_id}}-{{message_type}}&m={{to_address_md5}}&p={{batch_id}}" width="2" height="6" border="0" />
+            
+</div>
